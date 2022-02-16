@@ -1,9 +1,23 @@
+function reverse(word) {
+  // 'abc' => 'cba'
+  // const wordArray = word.split("");
+  // const reversedWordArray = wordArray.reverse();
+  // const reversedWord = reversedWordArray.join("");
+  // return reversedWord;
+  return word.split("").reverse().join("");
+}
+
 function isPalindrome(word) {
-  // Write your algorithm here
+  const reversedWord = reverse(word);
+
+  return word === reversedWord;
 }
 
 /* 
-  Add your pseudocode here
+  function isPalidrome(takes a word as an argument)
+    if true if word is same fowards and backgrounds
+      else false if workd if not the same fowards as backwords
+  return result
 */
 
 /*
